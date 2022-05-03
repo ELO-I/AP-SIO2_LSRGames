@@ -4,6 +4,6 @@ function getInfo()
 {
     $DepuisModele = new modele;
     $ReponseBDD = $DepuisModele->executerRequete("SELECT * FROM information");
-    $ListeDesInfo = $ReponseBDD->fetchAll();
+    $ListeDesInfo = $ReponseBDD->fetch();
     return $ListeDesInfo;
 }
